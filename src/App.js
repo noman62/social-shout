@@ -1,19 +1,14 @@
-import React from "react";
-import Home from "./component/Home/Home";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Home from "./pages/home/Home";
+import TopBar from "./topbar/TopBar";
+
 
 function App() {
+
   return (
-<Router>
-  <Route path="/">
-<Home></Home>
-  </Route>
-</Router>
+    <>
+      <TopBar />
+      <Home />
+    </>
   );
 }
 
